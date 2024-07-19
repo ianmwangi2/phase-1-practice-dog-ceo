@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const imgUrl = "https://dog.ceo/api/breeds/image/random/4";
     const breedUrl = "https://dog.ceo/api/breeds/list/all";
 
-    // Fetch dog images and display them
     fetch(imgUrl)
         .then(response => response.json())
         .then(data => {
@@ -22,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const breedsContainer = document.getElementById('dog-breeds');
     breedsContainer.addEventListener('click', function(event) {
         if (event.target.tagName === 'LI') {
-            event.target.style.color = 'blue'; // Change color to your preference
+            event.target.style.color = 'blue'; 
         }
     });
 
